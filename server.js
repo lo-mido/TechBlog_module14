@@ -37,6 +37,8 @@ app.set('view engine', 'handlebars');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+//http://localhost:3001
+//http://localhost:300/js/login.js
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
